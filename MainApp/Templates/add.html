@@ -13,28 +13,45 @@
         <div class="form-group">
             <label for="">ID</label>
             <input type="text" name="inputId" class="form-control">
+            <br>
         </div>
 
         <div class="form-group">
             <label for="">Name</label>
             <input type="text" name="inputName" class="form-control">
+            <br>
         </div>
-
+       
         <div class="form-group">
             <label for="">Department</label>
-            <input type="text" name="inputDepartment" class="form-control">
+            <select name="inputDepartment" class="form-control">
+                <option selected disabled="true">-----Select Department-----</option>
+                <option>Computer Science</option>
+                <option>Computer Engineering</option>
+                <option>Information Technology</option>
+            </select>
             <br>
         </div>
 
         <div class="form-group">
             <label for="">Employment Status</label>
-            <input type="text" name="inputEmploymentStatus" class="form-control">
+            <select name="inputEmploymentStatus" class="form-control">
+                <option selected disabled="true">-----Select Employment Status-----</option>
+                <option>Part-time</option>
+                <option>Full-time</option>
+            </select>
             <br>
         </div>
 
         <div class="form-group">
             <label for="">Expertise/Subject</label>
-            <input type="text" name="inputExpertiseSubject" class="form-control">
+            <hr>
+            <input type="checkbox" value="Software Engineering" class="chkvalues"/>Software Engineering
+            <input type="checkbox" value="Programming" class="chkvalues"/>Programming
+            <input type="checkbox" value="Human Computer Interaction" class="chkvalues"/>Human Computer Interaction
+            <input type="checkbox" value="Computer Systems and Hardware" class="chkvalues"/>Computer Systems and Hardware
+            <input type="checkbox" value="Discrete Structures" class="chkvalues"/>Discrete Structures
+            <input type="hidden" name="inputExpertiseSubject" id="txtvalues"/>
             <br>
         </div>
 
