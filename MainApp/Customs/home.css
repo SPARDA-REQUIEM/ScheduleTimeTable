@@ -1,7 +1,7 @@
 /* custom styling for home page */
 
 body {
-    background-image: url("images/index-bg-img.jpeg");
+    background-image: url("https://ptvnews.ph/wp-content/uploads/2022/06/PLM1-scaled.jpg");
     background-size: cover;
     background-repeat: no-repeat, repeat;
     background-attachment: fixed;
@@ -9,16 +9,16 @@ body {
     display: flex;
     justify-content: center;
     height: 100%;
+    padding-top: 2px;
 }
 
 .pop-up {
     height: max-content;
-    min-width: 360px;
-    width: 80%;
+    min-width: 350px;
+    width: 90%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
-    margin: 8% 0;
 }
 
 .popup-div {
@@ -26,13 +26,53 @@ body {
     position: relative;
 }
 
-/* Responsive UI using breakpoints */
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
 
-@media (max-width: 767.98px) {
-    #info-section { display: none; }
-    #form-section {border-radius: inherit;}
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
 }
 
-@media (max-width: 991.98px) {
-    .popup { width: 98%; }
+.gradient-form {
+    height: 100vh !important;
+    align-items: center;
+}
+
+#info-section {background-color: #DDD;}
+
+/* Responsive UI using breakpoints */
+
+@media (max-width: 434px) {
+    .pop-up {
+        width: 98%;
+    }
+}
+
+@media (max-width: 875.98px) {
+    #info-section {
+        display: none;
+    }
+
+    #form-section {
+        border-radius: inherit;
+        width: 70%;
+    }
+}
+
+@media (max-width: 1040px) {
+    #form-section {
+        border-radius: inherit;
+        width: 75%;
+    }
+}
+
+@media (max-height: 673px) {
+    .gradient-form {
+        align-items: flex-start;
+        margin-top: 12px;
+    }
 }
